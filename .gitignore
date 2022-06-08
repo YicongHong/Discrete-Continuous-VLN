@@ -7,8 +7,10 @@ __pycache__/
 *$py.class
 
 .vscode/
-data/*
-!data/.gitkeep
+data/pretrained_models/*
+!data/pretrained_models/.gitkeep
+data/scene_datasets/*
+!data/scene_datasets/.gitkeep
 
 debug_cache/
 *.jsonl
@@ -18,8 +20,14 @@ habitat_connectivity_graph/*
 
 hub/*
 
-logs/*
-!logs/.gitkeep
+logs/checkpoints/*
+!logs/checkpoints/.gitkeep
+logs/eval_results/*
+!logs/eval_results/.gitkeep
+logs/running_log/*
+!logs/running_log/.gitkeep
+logs/tensorboard_dirs/*
+!logs/tensorboard_dirs/.gitkeep
 
 obstacle/*
 !obstacle/.gitkeep
