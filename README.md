@@ -17,6 +17,7 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 - [x] VLN-CE Installation Guide
 - [ ] Submitted version of CMA and Recurrent-VLN-BERT with the Candidate Waypoint Predictor (CWP)
 - [x] Pre-trained weights of the navigator networks and the CWP
+- [ ] RxR-CE code
 - [ ] Candidate Waypoint Predictor training code
 - [ ] Connectivity graphs in continuous environments
 - [ ] Graph-walk in continous environments code
