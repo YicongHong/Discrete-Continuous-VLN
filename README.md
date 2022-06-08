@@ -8,5 +8,6 @@ Paper, code and data coming soon.
 
 <p align="center">
 <img src="./figures/traj_0.gif" width="50%" height="50%"/>
+<img src="./figures/traj_1.gif" width="50%" height="50%"/>
 </p>
 
