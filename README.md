@@ -21,6 +21,7 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 - [ ] Candidate Waypoint Predictor training code
 - [ ] Connectivity graphs in continuous environments
 - [ ] Graph-walk in continous environments code
+- [ ] Test all versions for single-node multi-GPU-processing
 
 ## Prerequisites
 
