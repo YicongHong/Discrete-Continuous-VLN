@@ -25,7 +25,7 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 
 ### Installation
 
-Follow the [Habitat Installation Guide](https://github.com/facebookresearch/habitat-lab#installation) to install [`habitat-lab`](https://github.com/facebookresearch/habitat-lab) and [`habitat-sim`](https://github.com/facebookresearch/habitat-sim). We use version [`v0.1.7`](https://github.com/facebookresearch/habitat-lab/releases/tag/v0.1.7) in our experiments, same as in the [VLN-CE](https://github.com/jacobkrantz/VLN-CE), please refer to VLN-CE git page for more details. In brief:
+Follow the [Habitat Installation Guide](https://github.com/facebookresearch/habitat-lab#installation) to install [`habitat-lab`](https://github.com/facebookresearch/habitat-lab) and [`habitat-sim`](https://github.com/facebookresearch/habitat-sim). We use version [`v0.1.7`](https://github.com/facebookresearch/habitat-lab/releases/tag/v0.1.7) in our experiments, same as in the VLN-CE, please refer to [VLN-CE](https://github.com/jacobkrantz/VLN-CE) page for more details. In brief:
 
 1. Create a virtual environment. Clone a stable version from the github repository and install `habitat-lab`. We develop this project with Python 3.6. The command below will install the core of Habitat Lab as well as the habitat_baselines along with all additional requirements.
     ```bash
