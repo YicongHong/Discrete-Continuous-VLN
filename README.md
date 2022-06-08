@@ -65,4 +65,17 @@ Matterport3D (MP3D) scene reconstructions are used. The official Matterport3D do
 python download_mp.py --task habitat -o data/scene_datasets/mp3d/
 ```
 
-Extract such that it has the form `data/scene_datasets/mp3d/{scene}/{scene}.glb`. There should be 90 scenes.
+Extract such that it has the form `scene_datasets/mp3d/{scene}/{scene}.glb`. There should be 90 scenes. Place the folder in `data/`.
+
+
+## Citation
+Please cite our paper:
+```
+@InProceedings{Hong_2022_CVPR,
+    author    = {Hong, Yicong and Wang, Zun and Wu, Qi and Gould, Stephen},
+    title     = {Bridging the Gap Between Learning in Discrete and Continuous Environments for Vision-and-Language Navigation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022}
+}
+```
