@@ -14,7 +14,8 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 <!-- "*Maybe it means something more - something we can't yet understand... I'm drawn across the universe to someone... Love is the one thing we're capable of perceiving that transcends dimensions of time and space. Maybe we should trust that, even if we can't understand it.*" --- [Interstellar (2014)](https://www.imdb.com/title/tt0816692/). -->
 
 ## TODOs
-- [x] Submitted version of CMA and Recurrent-VLN-BERT with the Candidate Waypoint Predictor (CWP)
+- [x] VLN-CE Installation Guide
+- [ ] Submitted version of CMA and Recurrent-VLN-BERT with the Candidate Waypoint Predictor (CWP)
 - [x] Pre-trained weights of the navigator networks and the CWP
 - [ ] Candidate Waypoint Predictor training code
 - [ ] Connectivity graphs in continuous environments
@@ -26,7 +27,7 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 
 Follow the [Habitat Installation Guide](https://github.com/facebookresearch/habitat-lab#installation) to install [`habitat-lab`](https://github.com/facebookresearch/habitat-lab) and [`habitat-sim`](https://github.com/facebookresearch/habitat-sim). We use version [`v0.2.1`](https://github.com/facebookresearch/habitat-lab/releases/tag/v0.2.1) (the latest version) in all our experiments. In brief:
 
-1. Clone a stable version from the github repository and install habitat-lab. Note that python>=3.7 is required for working with habitat-lab. The command below will install the core of Habitat Lab as well as the habitat_baselines along with all additional requirements.
+1. Create a virtual environment. Clone a stable version from the github repository and install habitat-lab. Note that python>=3.7 is required for working with habitat-lab. The command below will install the core of Habitat Lab as well as the habitat_baselines along with all additional requirements.
     ```bash
     git clone --branch stable https://github.com/facebookresearch/habitat-lab.git
     cd habitat-lab
@@ -35,12 +36,18 @@ Follow the [Habitat Installation Guide](https://github.com/facebookresearch/habi
     ```
 
 2. Install `habitat-sim` for a machine with multiple GPUs or without an attached display (i.e. a cluster):
-      ```bash
-       conda install habitat-sim withbullet headless -c conda-forge -c aihabitat
-       ```
+    ```bash
+    conda install habitat-sim withbullet headless -c conda-forge -c aihabitat
+    ```
 
-3. Install the learning packages:
-      ```bash
-       conda install habitat-sim withbullet headless -c conda-forge -c aihabitat
-       ```
+3. Install the learning packages (PyTorch 1.10.1):
+    ```bash
+    pip3 install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+    ```
+      
+4. Install other useful packages in our experiments:
+    ```bash
+    pip install fastdtw==0.3.4 networkx==2.5.1 dtw==1.4.0 msgpack_numpy==0.4.7.1 jsonlines==2.0.0
+    ```
        
+5. 
