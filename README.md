@@ -14,8 +14,9 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 <!-- "*Maybe it means something more - something we can't yet understand... I'm drawn across the universe to someone... Love is the one thing we're capable of perceiving that transcends dimensions of time and space. Maybe we should trust that, even if we can't understand it.*" --- [Interstellar (2014)](https://www.imdb.com/title/tt0816692/). -->
 
 ### TODOs
-- [ ] Mercury
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [ ] Connectivity Graphs in Continuous Environments
+- [x] Submitted version of CMA and Recurrent-VLN-BERT with the Candidate Waypoint Predictor (CWP)
+- [x] Pre-trained weights of the navigator networks and the CWP
+- [ ] Candidate Waypoint Predictor training code
+- [ ] Connectivity graphs in continuous environments
+- [ ] Graph-walk in continous environments code
 
