@@ -22,8 +22,6 @@ hub/*
 
 logs/checkpoints/*
 !logs/checkpoints/.gitkeep
-logs/eval_results/*
-!logs/eval_results/.gitkeep
 logs/running_log/*
 !logs/running_log/.gitkeep
 logs/tensorboard_dirs/*
