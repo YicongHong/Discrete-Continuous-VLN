@@ -13,9 +13,10 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 
 <!-- "*Maybe it means something more - something we can't yet understand... I'm drawn across the universe to someone... Love is the one thing we're capable of perceiving that transcends dimensions of time and space. Maybe we should trust that, even if we can't understand it.*" --- [Interstellar (2014)](https://www.imdb.com/title/tt0816692/). -->
 
-## TODOs
+## TODOs (COMING VERY SOON!)
 - [x] VLN-CE Installation Guide
 - [x] Submitted version R2R-CE code of CMA and Recurrent-VLN-BERT with the Candidate Waypoint Predictor (CWP)
+- [ ] Running guide
 - [ ] Pre-trained weights of the navigator networks and the CWP
 - [ ] RxR-CE code
 - [ ] Candidate Waypoint Predictor training code
