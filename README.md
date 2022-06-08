@@ -4,6 +4,8 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 [**Yicong Hong**](http://www.yiconghong.me/), **Zun Wang**, [Qi Wu](http://www.qi-wu.me/), [Stephen Gould](http://users.cecs.anu.edu.au/~sgould/)<br>
 
 
+[[Paper & Appendices](https://arxiv.org/abs/2203.02764)] [[CVPR2022 Video](https://www.youtube.com/watch?v=caFGVwwSQbg)] [[GitHub](https://github.com/YicongHong/Recurrent-VLN-BERT)]
+
 Paper, code and data coming soon.
 
 <p align="left">
