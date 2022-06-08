@@ -7,6 +7,6 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 Paper, code and data coming soon.
 
 <p align="center">
-<img src="./figures/traj_0.gif" width="100%" height="100%"/>
+<img src="./figures/traj_0.gif" width="50%" height="50%"/>
 </p>
 
