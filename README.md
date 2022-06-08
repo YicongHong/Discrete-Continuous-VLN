@@ -24,7 +24,7 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 
 ### Installation
 
-Follow the [Habitat Installation Guide]([https://github.com/facebookresearch/habitat-lab](https://github.com/facebookresearch/habitat-lab#installation)) to install [`habitat-lab`](https://github.com/facebookresearch/habitat-lab) and [`habitat-sim`](https://github.com/facebookresearch/habitat-sim). We use version [`v0.2.1`](https://github.com/facebookresearch/habitat-lab/releases/tag/v0.2.1) (the latest version) in all our experiments. In brief:
+Follow the [Habitat Installation Guide](https://github.com/facebookresearch/habitat-lab#installation) to install [`habitat-lab`](https://github.com/facebookresearch/habitat-lab) and [`habitat-sim`](https://github.com/facebookresearch/habitat-sim). We use version [`v0.2.1`](https://github.com/facebookresearch/habitat-lab/releases/tag/v0.2.1) (the latest version) in all our experiments. In brief:
 
 1. Clone a stable version from the github repository and install habitat-lab. Note that python>=3.7 is required for working with habitat-lab. The command below will install the core of Habitat Lab as well as the habitat_baselines along with all additional requirements.
     ```bash
