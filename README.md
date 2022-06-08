@@ -54,3 +54,15 @@ Follow the [Habitat Installation Guide](https://github.com/facebookresearch/habi
     pip install fastdtw==0.3.4 networkx==2.5.1 dtw==1.4.0 msgpack_numpy==0.4.7.1 jsonlines==2.0.0
     ```
 
+### Scenes: Matterport3D 
+
+Instructions copied from [VLN-CE](https://github.com/jacobkrantz/VLN-CE):
+
+Matterport3D (MP3D) scene reconstructions are used. The official Matterport3D download script (`download_mp.py`) can be accessed by following the instructions on their [project webpage](https://niessner.github.io/Matterport/). The scene data can then be downloaded:
+
+```bash
+# requires running with python 2.7
+python download_mp.py --task habitat -o data/scene_datasets/mp3d/
+```
+
+Extract such that it has the form `data/scene_datasets/mp3d/{scene}/{scene}.glb`. There should be 90 scenes.
