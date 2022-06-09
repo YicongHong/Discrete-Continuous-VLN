@@ -12,8 +12,6 @@ import habitat_extensions  # noqa: F401
 import vlnce_baselines     # noqa: F401
 from vlnce_baselines.config.default import get_config
 
-import pdb; pdb.set_trace()
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(

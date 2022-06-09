@@ -52,7 +52,7 @@ Follow the [Habitat Installation Guide](https://github.com/facebookresearch/habi
       
 4. Install other useful packages in our experiments:
     ```bash
-    pip install fastdtw==0.3.4 networkx==2.5.1 dtw==1.4.0 msgpack_numpy==0.4.7.1 jsonlines==2.0.0
+    pip install fastdtw==0.3.4 networkx==2.5.1 dtw==1.4.0 msgpack_numpy==0.4.7.1 jsonlines==2.0.0 transformers==4.9.2
     ```
 
 ### Scenes: Matterport3D 
