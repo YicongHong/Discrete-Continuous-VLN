@@ -30,30 +30,32 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 
 Follow the [Habitat Installation Guide](https://github.com/facebookresearch/habitat-lab#installation) to install [`habitat-lab`](https://github.com/facebookresearch/habitat-lab) and [`habitat-sim`](https://github.com/facebookresearch/habitat-sim). We use version [`v0.1.7`](https://github.com/facebookresearch/habitat-lab/releases/tag/v0.1.7) in our experiments, same as in the VLN-CE, please refer to [VLN-CE](https://github.com/jacobkrantz/VLN-CE) page for more details. In brief:
 
-1. Create a virtual environment. Clone a stable version from the github repository and install `habitat-lab`. We develop this project with Python 3.6. The command below will install the core of Habitat Lab as well as the habitat_baselines along with all additional requirements.
+1. Create a virtual environment. We develop this project with Python 3.6.
     ```bash
-    git clone --branch v0.1.7 git@github.com:facebookresearch/habitat-lab.git
-    cd habitat-lab
-    python -m pip install -r requirements.txt
-    python -m pip install -r habitat_baselines/rl/requirements.txt
-    python -m pip install -r habitat_baselines/rl/ddppo/requirements.txt
-    python setup.py develop --all # install habitat and habitat_baselines
+    conda create -n dcvln python3.6
+    conda activate dcvln
     ```
 
-2. Install `habitat-sim` for a machine with multiple GPUs or without an attached display (i.e. a cluster):
+4. Install `habitat-sim` for a machine with multiple GPUs or without an attached display (i.e. a cluster):
     ```bash
     conda install -c aihabitat -c conda-forge habitat-sim=0.1.7 headless
     ```
 
-3. Install the learning packages (PyTorch 1.10.1):
+2. Clone this repository and install all requirements for `habitat-lab`, VLN-CE and our experiments. Note that we specify `gym==0.21.0` because its latest version is not compatible with `habitat-lab-v0.1.7`.
+   ```bash
+   git clone git@github.com:YicongHong/Discrete-Continuous-VLN.git
+   cd Discrete-Continuous-VLN
+   python -m pip install -r requirements.txt
+   pip3 install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+   ```
+
+3. Clone a stable `habitat-lab` version from the github repository and install. The command below will install the core of Habitat Lab as well as the habitat_baselines.
     ```bash
-    pip3 install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+    git clone --branch v0.1.7 git@github.com:facebookresearch/habitat-lab.git
+    cd habitat-lab
+    python setup.py develop --all # install habitat and habitat_baselines
     ```
-      
-4. Install other useful packages in our experiments:
-    ```bash
-    pip install fastdtw==0.3.4 networkx==2.5.1 dtw==1.4.0 msgpack_numpy==0.4.7.1 jsonlines==2.0.0 transformers==4.9.2
-    ```
+
 
 ### Scenes: Matterport3D 
 
