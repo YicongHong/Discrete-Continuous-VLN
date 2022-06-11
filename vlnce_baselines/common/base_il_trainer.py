@@ -106,8 +106,8 @@ class BaseVLNCETrainer(BaseILTrainer):
             print('Using', self.config.GPU_NUMBERS,'GPU!')
             self.policy.net = DDP(self.policy.net.to(self.device), device_ids=[self.device],
                 output_device=self.device, find_unused_parameters=True, broadcast_buffers=False)
-            self.waypoint_predictor = DDP(self.waypoint_predictor.to(self.device), device_ids=[self.device],
-                output_device=self.device, find_unused_parameters=True, broadcast_buffers=False)
+            # self.waypoint_predictor = DDP(self.waypoint_predictor.to(self.device), device_ids=[self.device],
+            #     output_device=self.device, find_unused_parameters=True, broadcast_buffers=False)
 
         self.optimizer = torch.optim.AdamW(
             self.policy.parameters(), lr=self.config.IL.lr,
@@ -122,8 +122,8 @@ class BaseVLNCETrainer(BaseILTrainer):
                     device_ids=[self.device], output_device=self.device)
                 self.policy.load_state_dict(ckpt_dict["state_dict"])
                 self.policy.net = self.policy.net.module
-                self.waypoint_predictor = torch.nn.DataParallel(self.waypoint_predictor.to(self.device),
-                    device_ids=[self.device], output_device=self.device)
+                # self.waypoint_predictor = torch.nn.DataParallel(self.waypoint_predictor.to(self.device),
+                #     device_ids=[self.device], output_device=self.device)
             else:
                 self.policy.load_state_dict(ckpt_dict["state_dict"])
             if config.IL.is_requeue:

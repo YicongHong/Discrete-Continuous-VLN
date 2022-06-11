@@ -51,7 +51,7 @@ class PolicyViewSelectionCMA(ILPolicy):
         cls, config: Config, observation_space: Space, action_space: Space
     ):
         config.defrost()
-        config.MODEL.TORCH_GPU_ID = config.TORCH_GPU_ID
+        config.MODEL.TORCH_GPU_ID = config.TORCH_GPU_IDS[config.local_rank]
         config.freeze()
 
         return cls(

@@ -46,7 +46,7 @@ Follow the [Habitat Installation Guide](https://github.com/facebookresearch/habi
    git clone git@github.com:YicongHong/Discrete-Continuous-VLN.git
    cd Discrete-Continuous-VLN
    python -m pip install -r requirements.txt
-   pip3 install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+   pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html
    ```
 
 3. Clone a stable `habitat-lab` version from the github repository and install. The command below will install the core of Habitat Lab as well as the habitat_baselines.
@@ -69,6 +69,33 @@ python download_mp.py --task habitat -o data/scene_datasets/mp3d/
 ```
 
 Extract such that it has the form `scene_datasets/mp3d/{scene}/{scene}.glb`. There should be 90 scenes. Place the folder in `data/`.
+
+
+## Running
+
+Please refer to Peter's VLN paper for the [R2R Navigation task](https://arxiv.org/abs/1711.07280), and Jacob's [VLN-CE](https://arxiv.org/abs/2004.02857) for R2R in continuous environments.
+
+### Training and Evaluation
+
+We apply two popular navigator models, [CMA](https://arxiv.org/abs/1811.10092) and [Recurrent VLN-BERT](https://github.com/YicongHong/Recurrent-VLN-BERT) in our experiments.
+
+Use `run_CMA.bash` and `run_VLNBERT.bash` for `Training with a single GPU`, `Training on a single node with multiple GPUs`, `Evaluation` or `Inference`. Simply uncomment the corresponding lines in the files and do
+
+    ```bash
+    bash run_CMA.bash
+    ```
+
+or
+
+    ```bash
+    bash run_VLNBERT.bash
+    ```
+
+Note that `Evaluation` and `Inference` only supports single GPU. By running `Evaluation`, you should obtain very similar results as in `logs/eval_results/`. Running `Inference` generates the trajectories for submission to the [test server](https://eval.ai/challenge/719/overview).
+
+### Hardware
+
+The training of networks are performed on a single NVIDIA RTX 3090 GPU, which takes about 3.5 days to complete.
 
 
 ## Citation
