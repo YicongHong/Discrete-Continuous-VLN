@@ -68,7 +68,7 @@ Matterport3D (MP3D) scene reconstructions are used. The official Matterport3D do
 python download_mp.py --task habitat -o data/scene_datasets/mp3d/
 ```
 
-Extract such that it has the form `scene_datasets/mp3d/{scene}/{scene}.glb`. There should be 90 scenes. Place the folder in `data/`.
+Extract such that it has the form `scene_datasets/mp3d/{scene}/{scene}.glb`. There should be 90 scenes. Place the `scene_datasets` folder in `data/`.
 
 
 ## Running
@@ -81,15 +81,15 @@ We apply two popular navigator models, [CMA](https://arxiv.org/abs/1811.10092) a
 
 Use `run_CMA.bash` and `run_VLNBERT.bash` for `Training with a single GPU`, `Training on a single node with multiple GPUs`, `Evaluation` or `Inference`. Simply uncomment the corresponding lines in the files and do
 
-    ```
-    bash run_CMA.bash
-    ```
+```bash
+bash run_CMA.bash
+```
 
 or
 
-    ```
-    bash run_VLNBERT.bash
-    ```
+```bash
+bash run_VLNBERT.bash
+```
 
 Note that `Evaluation` and `Inference` only supports single GPU. By running `Evaluation`, you should obtain very similar results as in `logs/eval_results/`. Running `Inference` generates the trajectories for submission to the [R2R-CE Test Server](https://eval.ai/challenge/719/overview).
 
