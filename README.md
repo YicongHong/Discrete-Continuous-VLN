@@ -16,8 +16,8 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 ## TODOs (COMING VERY SOON!)
 - [x] VLN-CE Installation Guide
 - [x] Submitted version R2R-CE code of CMA and Recurrent-VLN-BERT with the Candidate Waypoint Predictor (CWP)
-- [ ] Running guide
-- [ ] Pre-trained weights of the navigator networks and the CWP
+- [x] Running guide
+- [x] Pre-trained weights of the navigator networks and the CWP
 - [ ] RxR-CE code
 - [ ] Candidate Waypoint Predictor training code
 - [ ] Connectivity graphs in continuous environments
@@ -69,6 +69,22 @@ python download_mp.py --task habitat -o data/scene_datasets/mp3d/
 ```
 
 Extract such that it has the form `scene_datasets/mp3d/{scene}/{scene}.glb`. There should be 90 scenes. Place the `scene_datasets` folder in `data/`.
+
+
+### Trained Network Weights (uploading.....)
+
+- Candidate Waypoint Predictor: `waypoint_prediction/checkpoints/check_val_best_avg_wayscore`
+    - The pre-trained weights of the Candidate Waypoint Predictor network.
+
+- ResNet-50 Depth Encoder: `data/pretrained_models/ddppo-models/gibson-2plus-resnet50.pth`
+    - Trained for Point-Goal navigation in Gibson with DD-PPO ([Link](https://github.com/facebookresearch/habitat-lab/tree/main/habitat_baselines/rl/ddppo)).
+
+- Recurrent VLN-BERT Initialization: `data/pretrained_models/rec_vln_bert-models/vlnbert_prevalent_model.bin`
+    - From the pre-trained Transformers [PREVALENT](https://github.com/weituo12321/PREVALENT).
+
+- Trained CMA agent: `logs/checkpoints/cont-cwp-cma-ori/cma_ckpt_best.pth`
+
+- Trained Recurrent VLN-BERT agent: `logs/checkpoints/cont-cwp-vlnbert-ori/vlnbert_ckpt_best.pth`
 
 
 ## Running

@@ -36,7 +36,7 @@ flag="--exp_name cont-cwp-vlnbert-ori
       TORCH_GPU_ID 0
       TORCH_GPU_IDS [0]
       EVAL.SPLIT val_unseen
-      EVAL_CKPT_PATH_DIR logs/checkpoints/cont-cwp-vlnbert-ori/ckpt_best.pth
+      EVAL_CKPT_PATH_DIR logs/checkpoints/cont-cwp-vlnbert-ori/vlnbert_ckpt_best.pth
       "
 python run.py $flag
 
@@ -51,6 +51,6 @@ python run.py $flag
 #       EVAL.SAVE_RESULTS False
 #       INFERENCE.PREDICTIONS_FILE test
 #       INFERENCE.SPLIT test
-#       INFERENCE.CKPT_PATH logs/checkpoints/cont-cwp-vlnbert-ori/ckpt_best.pth
+#       INFERENCE.CKPT_PATH logs/checkpoints/cont-cwp-vlnbert-ori/vlnbert_ckpt_best.pth
 #       "
 # python run.py $flag

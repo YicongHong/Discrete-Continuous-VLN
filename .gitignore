@@ -7,8 +7,10 @@ __pycache__/
 *$py.class
 
 .vscode/
-data/pretrained_models/*
-!data/pretrained_models/.gitkeep
+data/pretrained_models/ddppo-models/*
+!data/pretrained_models/ddppo-models/.gitkeep
+data/pretrained_models/rec_vln_bert-models/*
+!data/pretrained_models/rec_vln_bert-models/.gitkeep
 data/scene_datasets/*
 !data/scene_datasets/.gitkeep
 
@@ -20,8 +22,10 @@ habitat_connectivity_graph/*
 
 hub/*
 
-logs/checkpoints/*
-!logs/checkpoints/.gitkeep
+logs/checkpoints/cont-cwp-cma-ori/*
+!logs/checkpoints/cont-cwp-cma-ori/.gitkeep
+logs/checkpoints/cont-cwp-vlnbert-ori/*
+!logs/checkpoints/cont-cwp-vlnbert-ori/.gitkeep
 logs/running_log/*
 !logs/running_log/.gitkeep
 logs/tensorboard_dirs/*
