@@ -22,7 +22,7 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 - [ ] Candidate Waypoint Predictor training code
 - [ ] Connectivity graphs in continuous environments
 - [ ] Graph-walk in continous environments code
-- [ ] Test all code for single-node multi-GPU-processing
+- [x] Test all code for single-node multi-GPU-processing
 
 ## Prerequisites
 
@@ -81,13 +81,13 @@ We apply two popular navigator models, [CMA](https://arxiv.org/abs/1811.10092) a
 
 Use `run_CMA.bash` and `run_VLNBERT.bash` for `Training with a single GPU`, `Training on a single node with multiple GPUs`, `Evaluation` or `Inference`. Simply uncomment the corresponding lines in the files and do
 
-    ```console
+    ```
     bash run_CMA.bash
     ```
 
 or
 
-    ```console
+    ```
     bash run_VLNBERT.bash
     ```
 
