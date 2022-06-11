@@ -73,7 +73,7 @@ Extract such that it has the form `scene_datasets/mp3d/{scene}/{scene}.glb`. The
 
 ## Running
 
-Please refer to Peter's VLN paper for the [R2R Navigation task](https://arxiv.org/abs/1711.07280), and Jacob's [VLN-CE](https://arxiv.org/abs/2004.02857) for R2R in continuous environments.
+Please refer to Peter Anderson's VLN paper for the [R2R Navigation task](https://arxiv.org/abs/1711.07280), and Jacob Krantz's [VLN-CE](https://arxiv.org/abs/2004.02857) for R2R in continuous environments (R2R-CE).
 
 ### Training and Evaluation
 
@@ -81,17 +81,17 @@ We apply two popular navigator models, [CMA](https://arxiv.org/abs/1811.10092) a
 
 Use `run_CMA.bash` and `run_VLNBERT.bash` for `Training with a single GPU`, `Training on a single node with multiple GPUs`, `Evaluation` or `Inference`. Simply uncomment the corresponding lines in the files and do
 
-    ```bash
+    ```console
     bash run_CMA.bash
     ```
 
 or
 
-    ```bash
+    ```console
     bash run_VLNBERT.bash
     ```
 
-Note that `Evaluation` and `Inference` only supports single GPU. By running `Evaluation`, you should obtain very similar results as in `logs/eval_results/`. Running `Inference` generates the trajectories for submission to the [test server](https://eval.ai/challenge/719/overview).
+Note that `Evaluation` and `Inference` only supports single GPU. By running `Evaluation`, you should obtain very similar results as in `logs/eval_results/`. Running `Inference` generates the trajectories for submission to the [R2R-CE Test Server](https://eval.ai/challenge/719/overview).
 
 ### Hardware
 
