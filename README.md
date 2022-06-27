@@ -15,7 +15,7 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 
 ## TODOs (COMING VERY SOON!)
 - [x] VLN-CE Installation Guide
-- [x] Submitted version R2R-CE code of CMA and Recurrent-VLN-BERT with the Candidate Waypoint Predictor (CWP)
+- [x] Submitted version R2R-CE code of CMA and Recurrent-VLN-BERT with the CWP
 - [x] Running guide
 - [x] Pre-trained weights of the navigator networks and the CWP
 - [ ] RxR-CE code
@@ -83,8 +83,10 @@ Extract such that it has the form `scene_datasets/mp3d/{scene}/{scene}.glb`. The
     - From the pre-trained Transformers [PREVALENT](https://github.com/weituo12321/PREVALENT).
 
 - [Trained CMA agent](https://zenodo.org/record/6634113/files/cma_ckpt_best.pth?download=1): `logs/checkpoints/cont-cwp-cma-ori/cma_ckpt_best.pth`
+    - Paper of the [Cross-Modal Matching Agent](https://arxiv.org/abs/1811.10092)
 
 - [Trained Recurrent VLN-BERT agent](https://zenodo.org/record/6634113/files/vlnbert_ckpt_best.pth?download=1): `logs/checkpoints/cont-cwp-vlnbert-ori/vlnbert_ckpt_best.pth`
+    - Paper of the [Recurrent VLN-BERT](https://arxiv.org/abs/2011.13922)
 
 
 ## Running
