@@ -71,20 +71,20 @@ python download_mp.py --task habitat -o data/scene_datasets/mp3d/
 Extract such that it has the form `scene_datasets/mp3d/{scene}/{scene}.glb`. There should be 90 scenes. Place the `scene_datasets` folder in `data/`.
 
 
-### Trained Network Weights (uploading.....)
+### Trained Network Weights
 
-- Candidate Waypoint Predictor: `waypoint_prediction/checkpoints/check_val_best_avg_wayscore`
+- [Candidate Waypoint Predictor](https://zenodo.org/record/6634113/files/check_val_best_avg_wayscore?download=1): `waypoint_prediction/checkpoints/check_val_best_avg_wayscore`
     - The pre-trained weights of the Candidate Waypoint Predictor network.
 
-- ResNet-50 Depth Encoder: `data/pretrained_models/ddppo-models/gibson-2plus-resnet50.pth`
-    - Trained for Point-Goal navigation in Gibson with DD-PPO ([Link](https://github.com/facebookresearch/habitat-lab/tree/main/habitat_baselines/rl/ddppo)).
+- [ResNet-50 Depth Encoder](https://github.com/facebookresearch/habitat-lab/tree/main/habitat_baselines/rl/ddpp): `data/pretrained_models/ddppo-models/gibson-2plus-resnet50.pth`
+    - Trained for Point-Goal navigation in Gibson with DD-PPO.
 
-- Recurrent VLN-BERT Initialization: `data/pretrained_models/rec_vln_bert-models/vlnbert_prevalent_model.bin`
+- [Recurrent VLN-BERT Initialization](https://zenodo.org/record/6634113/files/vlnbert_prevalent_model.bin?download=1): `data/pretrained_models/rec_vln_bert-models/vlnbert_prevalent_model.bin`
     - From the pre-trained Transformers [PREVALENT](https://github.com/weituo12321/PREVALENT).
 
-- Trained CMA agent: `logs/checkpoints/cont-cwp-cma-ori/cma_ckpt_best.pth`
+- [Trained CMA agent](https://zenodo.org/record/6634113/files/cma_ckpt_best.pth?download=1): `logs/checkpoints/cont-cwp-cma-ori/cma_ckpt_best.pth`
 
-- Trained Recurrent VLN-BERT agent: `logs/checkpoints/cont-cwp-vlnbert-ori/vlnbert_ckpt_best.pth`
+- [Trained Recurrent VLN-BERT agent](https://zenodo.org/record/6634113/files/vlnbert_ckpt_best.pth?download=1): `logs/checkpoints/cont-cwp-vlnbert-ori/vlnbert_ckpt_best.pth`
 
 
 ## Running
