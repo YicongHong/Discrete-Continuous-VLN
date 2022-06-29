@@ -91,9 +91,11 @@ Extract such that it has the form `scene_datasets/mp3d/{scene}/{scene}.glb`. The
 
 ### Adapted MP3D Connectivity Graphs in Continuous Environments
 
-We adapt the MP3D connectivity graphs defined for the discrete environments to the continuous Habitat-MP3D environments, such that all nodes are positioned in open space and all edges on the graph are fully traversable by an agent (VLN-CE configurations).
+We adapt the MP3D connectivity graphs defined for the discrete environments to the continuous Habitat-MP3D environments, such that all nodes are positioned in open space and all edges on the graph are fully traversable by an agent (with [VLN-CE configursations](https://github.com/jacobkrantz/VLN-CE/tree/master/habitat_extensions/config)). Please refer to Section 4.2 and Appendices A.1 in [our paper](https://arxiv.org/abs/2203.02764) for more details.
 
-Link to download the [adapted connectivity graphs](https://drive.google.com/file/d/1FDJzwne0KgoHvLHyBRuXMIqLD_BW-UrM/view?usp=sharing)
+Link to download the [adapted connectivity graphs](https://drive.google.com/file/d/1FDJzwne0KgoHvLHyBRuXMIqLD_BW-UrM/view?usp=sharing).
+
+Each file for a specific MP3D scene contains the positions of a set of nodes and edges connecting two adjacent nodes. From the node ids, you will find nodes inherited from the original graph, as well as new nodes added by us to complete the graph.
 
 
 ## Running
