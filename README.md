@@ -4,7 +4,8 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 
 [[Paper & Appendices](https://arxiv.org/abs/2203.02764)] [[CVPR2022 Video](https://www.youtube.com/watch?v=caFGVwwSQbg)] [[GitHub](https://github.com/YicongHong/Discrete-Continuous-VLN)] 
 
-Method presented in this paper is also the base method for winning the **1st Place in the Room-Across-Room (RxR) Habitat Challenge** in CVPR 2022.
+Method presented in this paper is also the base method for winning the **1st Place in the Room-Across-Room (RxR) Habitat Challenge** in CVPR 2022.<br>
+Dong An, Zun Wang, Yangguang Li, Yi Wang, [**Yicong Hong**](http://www.yiconghong.me/), Yan Huang, Liang Wang, [Jing Shao](https://amandajshao.github.io/)<br>
 
 [[Habitat-RxR Challenge Report](https://arxiv.org/abs/2206.11610)] [[Habitat-RxR Challenge Certificate](https://drive.google.com/file/d/15VbXcanw7D3q5TUm75WmDVslqgOmVvJk/view)]
 
