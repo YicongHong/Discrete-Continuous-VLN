@@ -96,8 +96,6 @@ We adapt the MP3D connectivity graphs defined for the discrete environments to t
 Link to download the [adapted connectivity graphs](https://drive.google.com/file/d/1FDJzwne0KgoHvLHyBRuXMIqLD_BW-UrM/view?usp=sharing)
 
 
-
-
 ## Running
 
 Please refer to Peter Anderson's VLN paper for the [R2R Navigation task](https://arxiv.org/abs/1711.07280), and Jacob Krantz's [VLN-CE](https://arxiv.org/abs/2004.02857) for R2R in continuous environments (R2R-CE).
