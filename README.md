@@ -71,6 +71,15 @@ python download_mp.py --task habitat -o data/scene_datasets/mp3d/
 Extract such that it has the form `scene_datasets/mp3d/{scene}/{scene}.glb`. There should be 90 scenes. Place the `scene_datasets` folder in `data/`.
 
 
+### Adapted MP3D Connectivity Graphs in Continuous Environments
+
+We adapt the [MP3D connectivity graphs](https://github.com/peteanderson80/Matterport3DSimulator/tree/master/connectivity) defined for the discrete environments to the continuous Habitat-MP3D environments, such that all nodes are positioned in open space and all edges on the graph are fully traversable by an agent (with [VLN-CE configursations](https://github.com/jacobkrantz/VLN-CE/tree/master/habitat_extensions/config)). Please refer to Section 4.2 and Appendices A.1 in [our paper](https://arxiv.org/abs/2203.02764) for more details.
+
+Link to download the [adapted connectivity graphs](https://drive.google.com/file/d/1FDJzwne0KgoHvLHyBRuXMIqLD_BW-UrM/view?usp=sharing).
+
+Each file for a specific MP3D scene contains the positions of a set of nodes and edges connecting two adjacent nodes. From the node ids, you will find nodes inherited from the original graph, as well as new nodes added by us to complete the graph.
+
+
 ### Trained Network Weights
 
 - [Candidate Waypoint Predictor](https://zenodo.org/record/6634113/files/check_val_best_avg_wayscore?download=1): `waypoint_prediction/checkpoints/check_val_best_avg_wayscore`
@@ -87,15 +96,6 @@ Extract such that it has the form `scene_datasets/mp3d/{scene}/{scene}.glb`. The
 
 - [Trained Recurrent VLN-BERT agent](https://zenodo.org/record/6634113/files/vlnbert_ckpt_best.pth?download=1): `logs/checkpoints/cont-cwp-vlnbert-ori/vlnbert_ckpt_best.pth`
     - Paper of the [Recurrent VLN-BERT](https://arxiv.org/abs/2011.13922)
-
-
-### Adapted MP3D Connectivity Graphs in Continuous Environments
-
-We adapt the MP3D connectivity graphs defined for the discrete environments to the continuous Habitat-MP3D environments, such that all nodes are positioned in open space and all edges on the graph are fully traversable by an agent (with [VLN-CE configursations](https://github.com/jacobkrantz/VLN-CE/tree/master/habitat_extensions/config)). Please refer to Section 4.2 and Appendices A.1 in [our paper](https://arxiv.org/abs/2203.02764) for more details.
-
-Link to download the [adapted connectivity graphs](https://drive.google.com/file/d/1FDJzwne0KgoHvLHyBRuXMIqLD_BW-UrM/view?usp=sharing).
-
-Each file for a specific MP3D scene contains the positions of a set of nodes and edges connecting two adjacent nodes. From the node ids, you will find nodes inherited from the original graph, as well as new nodes added by us to complete the graph.
 
 
 ## Running
@@ -123,6 +123,18 @@ Note that `Evaluation` and `Inference` only supports single GPU. By running `Eva
 ### Hardware
 
 The training of networks are performed on a single NVIDIA RTX 3090 GPU, which takes about 3.5 days to complete.
+
+
+
+## Related Works
+
+If you are interested in this research direction for VLN, below are some closely related works.
+
+[**Waypoint Models for Instruction-guided Navigation in Continuous Environments**](https://arxiv.org/abs/2110.02207) (ICCV2021) by Jacob Krantz, et al. 
+
+[**Sim-2-Sim Transfer for Vision-and-Language Navigation in Continuous Environments**](https://arxiv.org/abs/2204.09667) (2022) by Jacob Krantz, et al. 
+
+[**Sim-to-Real Transfer for Vision-and-Language Navigation**](https://arxiv.org/abs/2011.03807) (CoRL2021) by Peter Anderson, et al.
 
 
 ## Citation
