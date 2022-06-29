@@ -20,7 +20,7 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 - [x] Pre-trained weights of the navigator networks and the CWP
 - [ ] RxR-CE code
 - [ ] Candidate Waypoint Predictor training code
-- [ ] Connectivity graphs in continuous environments
+- [x] Connectivity graphs in continuous environments
 - [ ] Graph-walk in continous environments code
 - [x] Test all code for single-node multi-GPU-processing
 
@@ -87,6 +87,15 @@ Extract such that it has the form `scene_datasets/mp3d/{scene}/{scene}.glb`. The
 
 - [Trained Recurrent VLN-BERT agent](https://zenodo.org/record/6634113/files/vlnbert_ckpt_best.pth?download=1): `logs/checkpoints/cont-cwp-vlnbert-ori/vlnbert_ckpt_best.pth`
     - Paper of the [Recurrent VLN-BERT](https://arxiv.org/abs/2011.13922)
+
+
+### Adapted MP3D Connectivity Graphs in Continuous Environments
+
+We adapt the MP3D connectivity graphs defined for the discrete environments to the continuous Habitat-MP3D environments, such that all nodes are positioned in open space and all edges on the graph are fully traversable by an agent (VLN-CE configurations).
+
+Link to download the [adapted connectivity graphs](https://drive.google.com/file/d/1FDJzwne0KgoHvLHyBRuXMIqLD_BW-UrM/view?usp=sharing)
+
+
 
 
 ## Running
