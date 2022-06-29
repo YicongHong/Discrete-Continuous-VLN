@@ -6,7 +6,7 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 
 Method presented in this paper is also the base method for winning the **1st Place in the Room-Across-Room (RxR) Habitat Challenge** in CVPR 2022.
 
-[[Habitat RxR Challenge Report](https://arxiv.org/abs/2206.11610)] [[Habitat RxR Challenge Certificate](https://drive.google.com/file/d/15VbXcanw7D3q5TUm75WmDVslqgOmVvJk/view)]
+[[Habitat-RxR Challenge Report](https://arxiv.org/abs/2206.11610)] [[Habitat-RxR Challenge Certificate](https://drive.google.com/file/d/15VbXcanw7D3q5TUm75WmDVslqgOmVvJk/view)]
 
 <p align="left">
 <img src="./figures/traj_0.gif" width="47%" height="47%"/>
