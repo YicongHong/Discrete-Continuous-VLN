@@ -18,7 +18,7 @@ Dong An, Zun Wang, Yangguang Li, Yi Wang, [**Yicong Hong**](http://www.yiconghon
 
 <!-- "*Maybe it means something more - something we can't yet understand... I'm drawn across the universe to someone... Love is the one thing we're capable of perceiving that transcends dimensions of time and space. Maybe we should trust that, even if we can't understand it.*" --- [Interstellar (2014)](https://www.imdb.com/title/tt0816692/). -->
 
-## TODOs (COMING VERY SOON!)
+## TODOs
 - [x] VLN-CE Installation Guide
 - [x] Submitted version R2R-CE code of CMA and Recurrent-VLN-BERT with the CWP
 - [x] Running guide
@@ -135,11 +135,11 @@ The training of networks are performed on a single NVIDIA RTX 3090 GPU, which ta
 
 If you are interested in this research direction for VLN, below are some closely related works.
 
-[**Waypoint Models for Instruction-guided Navigation in Continuous Environments**](https://arxiv.org/abs/2110.02207) (ICCV2021) by Jacob Krantz, et al. 
+[**Waypoint Models for Instruction-guided Navigation in Continuous Environments**](https://arxiv.org/abs/2110.02207) (ICCV2021) by Jacob Krantz, Aaron Gokaslan, Dhruv Batra, Stefan Lee and Oleksandr Maksymets. 
 
-[**Sim-2-Sim Transfer for Vision-and-Language Navigation in Continuous Environments**](https://arxiv.org/abs/2204.09667) (2022) by Jacob Krantz, et al. 
+[**Sim-2-Sim Transfer for Vision-and-Language Navigation in Continuous Environments**](https://arxiv.org/abs/2204.09667) (2022) by Jacob Krantz and Stefan Lee. 
 
-[**Sim-to-Real Transfer for Vision-and-Language Navigation**](https://arxiv.org/abs/2011.03807) (CoRL2021) by Peter Anderson, et al.
+[**Sim-to-Real Transfer for Vision-and-Language Navigation**](https://arxiv.org/abs/2011.03807) (CoRL2021) by Peter Anderson, Ayush Shrivastava, Joanne Truong, Arjun Majumdar, Devi Parikh, Dhruv Batra and Stefan Lee.
 
 
 ## Citation
