@@ -7,8 +7,9 @@
 #       TORCH_GPU_IDS [0]
 #       IL.batch_size 16
 #       IL.lr 1e-5
-#       IL.epochs 50
+#       IL.epochs 100
 #       IL.schedule_ratio 0.50
+#       IL.decay_time 20
 #       "
 # python run.py $flag
 
@@ -20,10 +21,11 @@
 #       GPU_NUMBERS 2
 #       SIMULATOR_GPU_IDS [0,1]
 #       TORCH_GPU_IDS [0,1]
-#       IL.batch_size 2
-#       IL.lr 1e-4
-#       IL.epochs 50
-#       IL.schedule_ratio 0.75
+#       IL.batch_size 16
+#       IL.lr 1e-5
+#       IL.epochs 100
+#       IL.schedule_ratio 0.50
+#       IL.decay_time 20
 #       "
 # python -m torch.distributed.launch --nproc_per_node=2 --master_port=$RANDOM run.py $flag
 

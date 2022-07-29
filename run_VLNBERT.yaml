@@ -19,7 +19,7 @@ IL:
   epochs: 50
   batch_size: 16
   schedule_ratio: 0.50
-  decay_time: 10
+  decay_time: 20
   max_traj_len: 20
 
 MODEL:
