@@ -29,6 +29,8 @@ Dong An, Zun Wang, Yangguang Li, Yi Wang, [**Yicong Hong**](http://www.yiconghon
 - [ ] Graph-walk in continous environments code
 - [x] Test all code for single-node multi-GPU-processing
 
+Update: Thanks [ZunWang](https://github.com/wz0919) for contributing the depth-only Candidate Waypoint Prediction model for FoV 90 (R2R-CE) and FoV 79 (RxR-CE), the architecture remains the same but the input reduces to the DD-PPO depth encoder features. The model produces more accurate waypoint prediction results than the one used in our paper. Weights uploaded in the session below.
+
 ## Prerequisites
 
 ### Installation
@@ -88,7 +90,9 @@ Each file for a specific MP3D scene contains the positions of a set of nodes and
 ### Trained Network Weights
 
 - [Candidate Waypoint Predictor](https://zenodo.org/record/6634113/files/check_val_best_avg_wayscore?download=1): `waypoint_prediction/checkpoints/check_val_best_avg_wayscore`
-    - The pre-trained weights of the Candidate Waypoint Predictor network.
+    - The pre-trained weights used in paper (RGB-D FoV 90).
+    - The pre-trained [depth-only weights (FoV 90 for R2R-CE)](https://drive.google.com/file/d/1goXbgLP2om9LsEQZ5XvB0UpGK4A5SGJC/view?usp=sharing).
+    - The pre-trained [depth-only weights (FoV 79 for RxR-CE)](https://drive.google.com/file/d/1LxhXkise-H96yMMrTPIT6b2AGjSjqqg0/view?usp=sharing).
 
 - [ResNet-50 Depth Encoder](https://github.com/facebookresearch/habitat-lab/tree/main/habitat_baselines/rl/ddpp): `data/pretrained_models/ddppo-models/gibson-2plus-resnet50.pth`
     - Trained for Point-Goal navigation in Gibson with DD-PPO.
@@ -123,7 +127,8 @@ or
 bash run_VLNBERT.bash
 ```
 
-Note that `Evaluation` and `Inference` only supports single GPU. By running `Evaluation`, you should obtain very similar results as in `logs/eval_results/`. Running `Inference` generates the trajectories for submission to the [R2R-CE Test Server](https://eval.ai/challenge/719/overview).
+<!-- Note that `Evaluation` and `Inference` only supports single GPU.  -->
+By running `Evaluation`, you should obtain very similar results as in `logs/eval_results/`. Running `Inference` generates the trajectories for submission to the [R2R-CE Test Server](https://eval.ai/challenge/719/overview).
 
 ### Hardware
 
