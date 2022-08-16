@@ -19,6 +19,9 @@ Dong An, Zun Wang, Yangguang Li, Yi Wang, [**Yicong Hong**](http://www.yiconghon
 <!-- "*Maybe it means something more - something we can't yet understand... I'm drawn across the universe to someone... Love is the one thing we're capable of perceiving that transcends dimensions of time and space. Maybe we should trust that, even if we can't understand it.*" --- [Interstellar (2014)](https://www.imdb.com/title/tt0816692/). -->
 
 ## TODOs
+
+Update: Thanks [ZunWang](https://github.com/wz0919) for contributing the depth-only Candidate Waypoint Prediction model for FoV 90 (R2R-CE) and FoV 79 (RxR-CE), the architecture remains the same but the input reduces to the DD-PPO depth encoder features. The model produces more accurate waypoint prediction results than the one used in our paper. Weights uploaded in the session below.
+
 - [x] VLN-CE Installation Guide
 - [x] Submitted version R2R-CE code of CMA and Recurrent-VLN-BERT with the CWP
 - [x] Running guide
@@ -28,8 +31,6 @@ Dong An, Zun Wang, Yangguang Li, Yi Wang, [**Yicong Hong**](http://www.yiconghon
 - [x] Connectivity graphs in continuous environments
 - [ ] Graph-walk in continous environments code
 - [x] Test all code for single-node multi-GPU-processing
-
-Update: Thanks [ZunWang](https://github.com/wz0919) for contributing the depth-only Candidate Waypoint Prediction model for FoV 90 (R2R-CE) and FoV 79 (RxR-CE), the architecture remains the same but the input reduces to the DD-PPO depth encoder features. The model produces more accurate waypoint prediction results than the one used in our paper. Weights uploaded in the session below.
 
 ## Prerequisites
 
@@ -89,8 +90,8 @@ Each file for a specific MP3D scene contains the positions of a set of nodes and
 
 ### Trained Network Weights
 
-- [Candidate Waypoint Predictor](https://zenodo.org/record/6634113/files/check_val_best_avg_wayscore?download=1): `waypoint_prediction/checkpoints/check_val_best_avg_wayscore`
-    - The pre-trained weights used in paper (RGB-D FoV 90).
+- Candidate Waypoint Predictor: `waypoint_prediction/checkpoints/check_val_best_avg_wayscore`
+    - The pre-trained [weights used in our paper (FoV 90 RGB-D)](https://zenodo.org/record/6634113/files/check_val_best_avg_wayscore?download=1).
     - The pre-trained [depth-only weights (FoV 90 for R2R-CE)](https://drive.google.com/file/d/1goXbgLP2om9LsEQZ5XvB0UpGK4A5SGJC/view?usp=sharing).
     - The pre-trained [depth-only weights (FoV 79 for RxR-CE)](https://drive.google.com/file/d/1LxhXkise-H96yMMrTPIT6b2AGjSjqqg0/view?usp=sharing).
 
