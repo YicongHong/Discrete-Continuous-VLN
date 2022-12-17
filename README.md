@@ -95,7 +95,7 @@ Each file for a specific MP3D scene contains the positions of a set of nodes and
     - The pre-trained [depth-only weights (FoV 90 for R2R-CE)](https://drive.google.com/file/d/1goXbgLP2om9LsEQZ5XvB0UpGK4A5SGJC/view?usp=sharing).
     - The pre-trained [depth-only weights (FoV 79 for RxR-CE)](https://drive.google.com/file/d/1LxhXkise-H96yMMrTPIT6b2AGjSjqqg0/view?usp=sharing).
 
-- [ResNet-50 Depth Encoder](https://zenodo.org/api/files/b755f4cc-884e-4774-8320-22c99a526426/gibson-2plus-resnet50.pth?versionId=7f1402ba-af93-46a0-8ec5-4da54ebf1241): `data/pretrained_models/ddppo-models/gibson-2plus-resnet50.pth`
+- [ResNet-50 Depth Encoder](https://zenodo.org/record/6634113/files/gibson-2plus-resnet50.pth?download=1): `data/pretrained_models/ddppo-models/gibson-2plus-resnet50.pth`
     - Trained for Point-Goal navigation in Gibson with DD-PPO.
 
 - [Recurrent VLN-BERT Initialization](https://zenodo.org/record/6634113/files/vlnbert_prevalent_model.bin?download=1): `data/pretrained_models/rec_vln_bert-models/vlnbert_prevalent_model.bin`
