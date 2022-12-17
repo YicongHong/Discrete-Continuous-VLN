@@ -91,20 +91,20 @@ Each file for a specific MP3D scene contains the positions of a set of nodes and
 ### Trained Network Weights
 
 - Candidate Waypoint Predictor: `waypoint_prediction/checkpoints/check_val_best_avg_wayscore`
-    - The pre-trained [weights used in our paper (FoV 90 RGB-D)](https://zenodo.org/record/6634113/files/check_val_best_avg_wayscore?download=1).
+    - The pre-trained [weights used in our paper (FoV 90 RGB-D)](https://zenodo.org/record/6634113/files/check_val_best_avg_wayscore).
     - The pre-trained [depth-only weights (FoV 90 for R2R-CE)](https://drive.google.com/file/d/1goXbgLP2om9LsEQZ5XvB0UpGK4A5SGJC/view?usp=sharing).
     - The pre-trained [depth-only weights (FoV 79 for RxR-CE)](https://drive.google.com/file/d/1LxhXkise-H96yMMrTPIT6b2AGjSjqqg0/view?usp=sharing).
 
-- [ResNet-50 Depth Encoder](https://zenodo.org/record/6634113/files/gibson-2plus-resnet50.pth?download=1): `data/pretrained_models/ddppo-models/gibson-2plus-resnet50.pth`
+- [ResNet-50 Depth Encoder](https://zenodo.org/record/6634113/files/gibson-2plus-resnet50.pth): `data/pretrained_models/ddppo-models/gibson-2plus-resnet50.pth`
     - Trained for Point-Goal navigation in Gibson with DD-PPO.
 
-- [Recurrent VLN-BERT Initialization](https://zenodo.org/record/6634113/files/vlnbert_prevalent_model.bin?download=1): `data/pretrained_models/rec_vln_bert-models/vlnbert_prevalent_model.bin`
+- [Recurrent VLN-BERT Initialization](https://zenodo.org/record/6634113/files/vlnbert_prevalent_model.bin): `data/pretrained_models/rec_vln_bert-models/vlnbert_prevalent_model.bin`
     - From the pre-trained Transformers [PREVALENT](https://github.com/weituo12321/PREVALENT).
 
-- [Trained CMA agent](https://zenodo.org/record/6634113/files/cma_ckpt_best.pth?download=1): `logs/checkpoints/cont-cwp-cma-ori/cma_ckpt_best.pth`
+- [Trained CMA agent](https://zenodo.org/record/6634113/files/cma_ckpt_best.pth): `logs/checkpoints/cont-cwp-cma-ori/cma_ckpt_best.pth`
     - Paper of the [Cross-Modal Matching Agent](https://arxiv.org/abs/1811.10092)
 
-- [Trained Recurrent VLN-BERT agent](https://zenodo.org/record/6634113/files/vlnbert_ckpt_best.pth?download=1): `logs/checkpoints/cont-cwp-vlnbert-ori/vlnbert_ckpt_best.pth`
+- [Trained Recurrent VLN-BERT agent](https://zenodo.org/record/6634113/files/vlnbert_ckpt_best.pth): `logs/checkpoints/cont-cwp-vlnbert-ori/vlnbert_ckpt_best.pth`
     - Paper of the [Recurrent VLN-BERT](https://arxiv.org/abs/2011.13922)
 
 
