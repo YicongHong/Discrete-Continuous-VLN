@@ -20,17 +20,19 @@ Dong An, Zun Wang, Yangguang Li, Yi Wang, [**Yicong Hong**](http://www.yiconghon
 
 ## TODOs
 
+Update: Thanks [ZunWang](https://github.com/wz0919) for releasing the [code](https://github.com/wz0919/waypoint-predictor) for collecting the data and training the Candidate Waypoint Predictor. 
+
 Update: Thanks [ZunWang](https://github.com/wz0919) for contributing the depth-only Candidate Waypoint Prediction model for FoV 90 (R2R-CE) and FoV 79 (RxR-CE), the architecture remains the same but the input reduces to the DD-PPO depth encoder features. The model produces more accurate waypoint prediction results than the one used in our paper. Weights uploaded in the section below.
 
 - [x] VLN-CE Installation Guide
 - [x] Submitted version R2R-CE code of CMA and Recurrent-VLN-BERT with the CWP
 - [x] Running guide
 - [x] Pre-trained weights of the navigator networks and the CWP
-- [ ] RxR-CE code
+- ~~[ ] RxR-CE code~~
 - [ ] Graph construction code
 - [x] Candidate Waypoint Predictor training code
 - [x] Connectivity graphs in continuous environments
-~~- [ ] Graph-walk in continous environments code~~
+- ~~[ ] Graph-walk in continous environments code~~
 - [x] Test all code for single-node multi-GPU-processing
 
 ## Prerequisites
