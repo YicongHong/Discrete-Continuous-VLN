@@ -27,9 +27,10 @@ Update: Thanks [ZunWang](https://github.com/wz0919) for contributing the depth-o
 - [x] Running guide
 - [x] Pre-trained weights of the navigator networks and the CWP
 - [ ] RxR-CE code
-- [ ] Candidate Waypoint Predictor training code
+- [ ] Graph construction code
+- [x] Candidate Waypoint Predictor training code
 - [x] Connectivity graphs in continuous environments
-- [ ] Graph-walk in continous environments code
+~~- [ ] Graph-walk in continous environments code~~
 - [x] Test all code for single-node multi-GPU-processing
 
 ## Prerequisites
