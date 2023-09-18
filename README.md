@@ -4,7 +4,7 @@ Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learnin
 
 [[Paper & Appendices](https://arxiv.org/abs/2203.02764)] [[CVPR2022 Video](https://www.youtube.com/watch?v=caFGVwwSQbg)] [[GitHub](https://github.com/YicongHong/Discrete-Continuous-VLN)] 
 
-Method presented in this paper is also the base method for winning the: <br>**1st Place in the Room-Across-Room (RxR) Habitat Challenge in CVPR 2022**<br>
+The method presented in this paper is also the base method for winning the: <br>**1st Place in the Room-Across-Room (RxR) Habitat Challenge in CVPR 2022**<br>
 Dong An, Zun Wang, Yangguang Li, Yi Wang, [**Yicong Hong**](http://www.yiconghong.me/), Yan Huang, Liang Wang, [Jing Shao](https://amandajshao.github.io/)<br>
 
 [[Habitat-RxR Challenge Report](https://arxiv.org/abs/2206.11610)] [[Habitat-RxR Challenge Certificate](https://drive.google.com/file/d/15VbXcanw7D3q5TUm75WmDVslqgOmVvJk/view)]
@@ -20,9 +20,11 @@ Dong An, Zun Wang, Yangguang Li, Yi Wang, [**Yicong Hong**](http://www.yiconghon
 
 ## TODOs
 
+Update (18Sep2023): We sincerely apologize that our code has a bug in [Policy_ViewSelection_CMA.py](https://github.com/YicongHong/Discrete-Continuous-VLN/blob/394d36dda4553f05aadd2513407098ac06c5f5fa/vlnce_baselines/models/Policy_ViewSelection_CMA.py#L198) and [Policy_ViewSelection_VLNBERT.py](https://github.com/YicongHong/Discrete-Continuous-VLN/blob/394d36dda4553f05aadd2513407098ac06c5f5fa/vlnce_baselines/models/Policy_ViewSelection_VLNBERT.py#L141C1-L142C34); two important lines to control the visual encoders in training `self.rgb_encoder.cnn.eval()` and `self.depth_encoder.eval()` were accidentally deleted in the published version, which will cause around 3% absolute drop in results compared to the reported numbers in our paper. We have fixed this issue, and again, we want to deeply apologize for the inconvenience brought to all researchers.
+
 Update: Thanks [ZunWang](https://github.com/wz0919) for releasing the [code](https://github.com/wz0919/waypoint-predictor) for collecting the data and training the Candidate Waypoint Predictor. 
 
-Update: Thanks [ZunWang](https://github.com/wz0919) for contributing the depth-only Candidate Waypoint Prediction model for FoV 90 (R2R-CE) and FoV 79 (RxR-CE), the architecture remains the same but the input reduces to the DD-PPO depth encoder features. The model produces more accurate waypoint prediction results than the one used in our paper. Weights uploaded in the section below.
+Update: Thanks [ZunWang](https://github.com/wz0919) for contributing the depth-only Candidate Waypoint Prediction model for FoV 90 (R2R-CE) and FoV 79 (RxR-CE), the architecture remains the same but the input reduces to the DD-PPO depth encoder features. The model produces more accurate waypoint prediction results than the one used in our paper. Weights are uploaded in the section below.
 
 - [x] VLN-CE Installation Guide
 - [x] Submitted version R2R-CE code of CMA and Recurrent-VLN-BERT with the CWP
@@ -32,7 +34,7 @@ Update: Thanks [ZunWang](https://github.com/wz0919) for contributing the depth-o
 - [ ] Graph construction code
 - [x] Candidate Waypoint Predictor training code
 - [x] Connectivity graphs in continuous environments
-- ~~[ ] Graph-walk in continous environments code~~
+- ~~[ ] Graph-walk in continuous environments code~~
 - [x] Test all code for single-node multi-GPU-processing
 
 ## Prerequisites
@@ -41,7 +43,7 @@ Update: Thanks [ZunWang](https://github.com/wz0919) for contributing the depth-o
 
 Follow the [Habitat Installation Guide](https://github.com/facebookresearch/habitat-lab#installation) to install [`habitat-lab`](https://github.com/facebookresearch/habitat-lab) and [`habitat-sim`](https://github.com/facebookresearch/habitat-sim). We use version [`v0.1.7`](https://github.com/facebookresearch/habitat-lab/releases/tag/v0.1.7) in our experiments, same as in the VLN-CE, please refer to the [VLN-CE](https://github.com/jacobkrantz/VLN-CE) page for more details. In brief:
 
-1. Create a virtual environment. We develop this project with Python 3.6.
+1. Create a virtual environment. We developed this project with Python 3.6.
     ```bash
     conda create -n dcvln python=3.6
     conda activate dcvln
