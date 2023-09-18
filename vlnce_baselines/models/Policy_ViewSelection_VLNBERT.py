@@ -138,7 +138,9 @@ class VLNBERT(Net):
         self.drop_env = nn.Dropout(p=0.4)
 
         self.train()
-
+        self.rgb_encoder.cnn.eval()
+        self.depth_encoder.eval()
+    
     @property  # trivial argument, just for init with habitat
     def output_size(self):
         return 1
