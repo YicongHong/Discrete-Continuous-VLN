@@ -195,6 +195,8 @@ class CMANet(Net):
         )
 
         self.train()
+        self.rgb_encoder.cnn.eval()
+        self.depth_encoder.eval()
 
     @property
     def is_blind(self):
