@@ -96,7 +96,7 @@ Each file for a specific MP3D scene contains the positions of a set of nodes and
 ### Trained Network Weights
 
 - Candidate Waypoint Predictor: `waypoint_prediction/checkpoints/check_val_best_avg_wayscore`
-    - The pre-trained [weights used in our paper (FoV 90 RGB-D)](https://zenodo.org/record/6634113/files/check_val_best_avg_wayscore).
+    - The pre-trained [weights used in our paper (FoV 90 RGB-D)](https://drive.google.com/file/d/1hRdecKWHnKjidIT_i5H5lEGRS53ewWEs/view?usp=drive_link).
     - The pre-trained [depth-only weights (FoV 90 for R2R-CE)](https://drive.google.com/file/d/1goXbgLP2om9LsEQZ5XvB0UpGK4A5SGJC/view?usp=sharing).
     - The pre-trained [depth-only weights (FoV 79 for RxR-CE)](https://drive.google.com/file/d/1LxhXkise-H96yMMrTPIT6b2AGjSjqqg0/view?usp=sharing).
 
