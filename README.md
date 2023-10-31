@@ -1,6 +1,6 @@
 # Discrete-Continuous-VLN
 Code and Data of the **CVPR 2022** paper: <br>**Bridging the Gap Between Learning in Discrete and Continuous Environments for Vision-and-Language Navigation**<br>
-[**Yicong Hong**](http://www.yiconghong.me/), **Zun Wang**, [Qi Wu](http://www.qi-wu.me/), [Stephen Gould](http://users.cecs.anu.edu.au/~sgould/)<br>
+[**Yicong Hong**](http://www.yiconghong.me/), [**Zun Wang**](https://zunwang1.github.io/), [Qi Wu](http://www.qi-wu.me/), [Stephen Gould](http://users.cecs.anu.edu.au/~sgould/)<br>
 
 [[Paper & Appendices](https://arxiv.org/abs/2203.02764)] [[CVPR2022 Video](https://www.youtube.com/watch?v=caFGVwwSQbg)] [[GitHub](https://github.com/YicongHong/Discrete-Continuous-VLN)] 
 
